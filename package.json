@@ -1,0 +1,30 @@
+{
+  "name": "iitkbucks-gui",
+  "version": "1.0.0",
+  "description": " gui front-end for IITKBucks",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron .",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pr-yadav/IITKBucks-frontend-gui.git"
+  },
+  "author": "Priyanshu Yadav",
+  "license": "ISC",
+  "dependencies": {
+    "app": "^0.1.0",
+    "axios": "^0.19.2",
+    "dialog": "^0.3.1",
+    "electron": "^9.1.1",
+    "fs": "0.0.1-security",
+    "ipc": "0.0.1",
+    "jquery": "^3.5.1",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "electron-reload": "^1.5.0"
+  }
+}
