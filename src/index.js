@@ -56,7 +56,7 @@ document.getElementById("transaction").addEventListener("click", () => {
    }) 
    main.loadFile(path.join(__dirname,'transaction.html'))
    main.removeMenu()
-   main.webContents.openDevTools()  //main.openDevTools()
+   //main.webContents.openDevTools()  //main.openDevTools()
    main.once('ready-to-show', () => {
       main.show()
    })
