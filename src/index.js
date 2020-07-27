@@ -30,6 +30,7 @@ document.getElementById("generateKey").addEventListener("click", () => {
   });
   fs.writeFileSync('public.pem',publicKey);
   fs.writeFileSync('private.pem',privateKey);
+  alert("Keys saved in files public.pem and private.pem")
   console.log("Keys saved in files public.pem and private.pem");
 });
 document.getElementById("balance").addEventListener("click", () => { 
@@ -42,6 +43,20 @@ document.getElementById("balance").addEventListener("click", () => {
    main.loadFile(path.join(__dirname,'balance.html'))
    main.removeMenu()
    //main.openDevTools()
+   main.once('ready-to-show', () => {
+      main.show()
+   })
+});
+document.getElementById("transaction").addEventListener("click", () => { 
+   var main = new BrowserWindow({
+      /*backgroundColor: '#2e2c29',*/
+      width: 6000, 
+      height: 6000,
+      webPreferences : {nodeIntegration: true}
+   }) 
+   main.loadFile(path.join(__dirname,'transaction.html'))
+   main.removeMenu()
+   main.webContents.openDevTools()  //main.openDevTools()
    main.once('ready-to-show', () => {
       main.show()
    })

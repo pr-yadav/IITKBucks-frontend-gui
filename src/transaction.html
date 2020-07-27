@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "UTF-8">
+      <title>Hello World!</title>
+      <!-- <link rel="stylesheet" href="../assets/css/balance.css"> -->
+   </head>
+   
+   <body>
+        <h1 id="heading">Check Balance</h1><br><br><br><br>
+        <button id="getPrivate" class="buttons">Select Private Key</button><br><br><br>
+        <br>
+        <p id="private"></p>
+
+      <button id="getPublic" class="buttons">Select Public Key</button><br><br><br>
+      <p id="public"></p>
+      <p id="balance"></p>
+      
+      <div id="pre-form">
+          <label for="noOfTxns">No. of benificiaries : </label>
+          <input id="noOfTxns" type="text"><br>
+          <label for="txnReward">Transaction fees : </label>
+          <input id="txnReward" type="text"><br>
+      </div>
+      <button id="nextBtn" class="buttons">Next</button><br>
+      <div id="postForm">
+
+      </div>
+      <script src="transaction.js"></script>
+   </body>
+</html>
